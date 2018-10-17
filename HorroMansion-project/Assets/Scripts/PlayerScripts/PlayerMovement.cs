@@ -4,19 +4,28 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour {
 
-    private Vector3 _axis;
+    public float moveSpeed;
+    public float rotationSpeed; 
+    private Rigidbody rb;
+    
 
     // Use this for initialization
-	void Start () {
-		
+	void Start ()
+    {
+        rb = GetComponent<Rigidbody>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void FixedUpdate ()
+    {
+        float rotateHorizontal = Input.GetAxis("Horizontal");
+        float moveVertical = Input.GetAxis("Vertical");
 
-        _axis = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
-
-        //_forward = _axis.y * 
-		
-	}
+        /*Vector3 movement = new Vector3(0, 0, moveVertical);
+        rb.AddForce(movement * moveSpeed);*/
+        
+        rb.velocity = transform.forward * moveSpeed * moveVertical;
+        transform.Rotate(Vector3.up * rotationSpeed * rotateHorizontal * Time.deltaTime);
+   
+    }
 }
