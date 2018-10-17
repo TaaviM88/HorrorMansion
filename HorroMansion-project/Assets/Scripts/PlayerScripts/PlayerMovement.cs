@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour {
 
         _axis = new Vector3(Input.GetAxis("Horizontal"), Input.GetAxis("Vertical"), 0);
 
-        _forward = _axis.y * 
+        //_forward = _axis.y * 
 		
 	}
 }
