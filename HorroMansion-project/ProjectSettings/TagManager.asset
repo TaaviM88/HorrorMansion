@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - 'Intractable '
+  - Item
   layers:
   - Default
   - TransparentFX
