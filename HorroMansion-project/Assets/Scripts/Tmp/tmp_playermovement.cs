@@ -19,4 +19,12 @@ public class tmp_playermovement : MonoBehaviour {
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
         _rb.AddForce(movement * speed);
 	}
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.gameObject.tag == "Intractable")
+        {
+            
+        }
+    }
 }
