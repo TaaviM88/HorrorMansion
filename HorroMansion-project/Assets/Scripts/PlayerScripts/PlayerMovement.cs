@@ -23,9 +23,23 @@ public class PlayerMovement : MonoBehaviour {
 
         /*Vector3 movement = new Vector3(0, 0, moveVertical);
         rb.AddForce(movement * moveSpeed);*/
-        
-        rb.velocity = transform.forward * moveSpeed * moveVertical;
+
+        if (moveVertical > 0)
+        {
+
+            rb.velocity = transform.forward * moveSpeed * moveVertical;
+        }
+
+        else if (moveVertical < 0)
+        {
+            rb.velocity = transform.forward * moveSpeed * moveVertical / 2;
+        }
+
         transform.Rotate(Vector3.up * rotationSpeed * rotateHorizontal * Time.deltaTime);
+
+        
+
+         
    
     }
 }
