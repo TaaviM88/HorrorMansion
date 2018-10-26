@@ -8,40 +8,42 @@ ModelImporter:
     100004: Dining_hall
     100006: Dining_hall_entrance
     100008: Dining_hall_upper_entrance
-    100010: Dining_hall_windows
-    100012: Door
-    100014: Door_Frames
-    100016: Inner_hallway
-    100018: Mystery_room
-    100020: Overpass_railing
-    100022: Service_quarters
-    100024: Service_quarters_upstairs
+    100010: Dining_hall_window_glass
+    100012: Dining_hall_windows
+    100014: Door
+    100016: Door_Frames
+    100018: Inner_hallway
+    100020: Mystery_room
+    100022: Overpass_railing
+    100024: Service_quarters
+    100026: Service_quarters_upstairs
     400000: Curtains
     400002: //RootNode
     400004: Dining_hall
     400006: Dining_hall_entrance
     400008: Dining_hall_upper_entrance
-    400010: Dining_hall_windows
-    400012: Door
-    400014: Door_Frames
-    400016: Inner_hallway
-    400018: Mystery_room
-    400020: Overpass_railing
-    400022: Service_quarters
-    400024: Service_quarters_upstairs
-    2100000: Curtains
-    2100002: Door
-    2100004: Door_Frames
-    2100006: Service_quarters_upper_walls
-    2100008: Service_quarters_upper_floor
-    2100010: Service_quarters_upper_roof
-    2100012: Dining_hall_upper_entrance_walls
-    2100014: Dining_hall_upper_entrance_ceiling
-    2100016: Dining_hall_upper_entrance_floor
-    2100018: Overpass_railing
-    2100020: Dining_hall_window_shape
-    2100022: Dining_hall_window_glass
-    2100024: Dining_hall_window_frames
+    400010: Dining_hall_window_glass
+    400012: Dining_hall_windows
+    400014: Door
+    400016: Door_Frames
+    400018: Inner_hallway
+    400020: Mystery_room
+    400022: Overpass_railing
+    400024: Service_quarters
+    400026: Service_quarters_upstairs
+    2100000: Dining_hall_window_glass
+    2100002: Dining_hall_window_frames
+    2100004: Curtains
+    2100006: Door
+    2100008: handle
+    2100010: Door_Frames
+    2100012: Service_quarters_upper_walls
+    2100014: Service_quarters_upper_floor
+    2100016: Service_quarters_upper_roof
+    2100018: Dining_hall_upper_entrance_walls
+    2100020: Dining_hall_upper_entrance_ceiling
+    2100022: Dining_hall_upper_entrance_floor
+    2100024: Overpass_railing
     2100026: Dining_hall_walls
     2100028: Dining_hall_panels
     2100030: Dining_hall_floor
@@ -62,39 +64,157 @@ ModelImporter:
     2300002: Dining_hall
     2300004: Dining_hall_entrance
     2300006: Dining_hall_upper_entrance
-    2300008: Dining_hall_windows
-    2300010: Door
-    2300012: Door_Frames
-    2300014: Inner_hallway
-    2300016: Mystery_room
-    2300018: Overpass_railing
-    2300020: Service_quarters
-    2300022: Service_quarters_upstairs
+    2300008: Dining_hall_window_glass
+    2300010: Dining_hall_windows
+    2300012: Door
+    2300014: Door_Frames
+    2300016: Inner_hallway
+    2300018: Mystery_room
+    2300020: Overpass_railing
+    2300022: Service_quarters
+    2300024: Service_quarters_upstairs
     3300000: Curtains
     3300002: Dining_hall
     3300004: Dining_hall_entrance
     3300006: Dining_hall_upper_entrance
-    3300008: Dining_hall_windows
-    3300010: Door
-    3300012: Door_Frames
-    3300014: Inner_hallway
-    3300016: Mystery_room
-    3300018: Overpass_railing
-    3300020: Service_quarters
-    3300022: Service_quarters_upstairs
-    4300000: Curtains
-    4300002: Door
-    4300004: Door_Frames
-    4300006: Service_quarters_upstairs
-    4300008: Dining_hall_upper_entrance
-    4300010: Overpass_railing
-    4300012: Dining_hall_windows
-    4300014: Dining_hall
-    4300016: Dining_hall_entrance
-    4300018: Service_quarters
-    4300020: Inner_hallway
-    4300022: Mystery_room
-  externalObjects: {}
+    3300008: Dining_hall_window_glass
+    3300010: Dining_hall_windows
+    3300012: Door
+    3300014: Door_Frames
+    3300016: Inner_hallway
+    3300018: Mystery_room
+    3300020: Overpass_railing
+    3300022: Service_quarters
+    3300024: Service_quarters_upstairs
+    4300000: Dining_hall_window_glass
+    4300002: Dining_hall_windows
+    4300004: Curtains
+    4300006: Door
+    4300008: Door_Frames
+    4300010: Service_quarters_upstairs
+    4300012: Dining_hall_upper_entrance
+    4300014: Overpass_railing
+    4300016: Dining_hall
+    4300018: Dining_hall_entrance
+    4300020: Service_quarters
+    4300022: Inner_hallway
+    4300024: Mystery_room
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Curtains
+    second: {fileID: 2100000, guid: ca8949f15065deb4f8519b7bc0c98a35, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_ceiling
+    second: {fileID: 2100000, guid: 5235ef3a400b9554696c8bd468a8c9fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_entrance_ceiling
+    second: {fileID: 2100000, guid: 5235ef3a400b9554696c8bd468a8c9fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_entrance_floor
+    second: {fileID: 2100000, guid: 3b66c982ecf65c243929351ff37aa7fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_entrance_walls
+    second: {fileID: 2100000, guid: 7f6259bb10e0ea944af91e770089880d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_floor
+    second: {fileID: 2100000, guid: 3b66c982ecf65c243929351ff37aa7fd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_panels
+    second: {fileID: 2100000, guid: d8aec68a21f11f04a872aaceca8ad1b7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_upper_entrance_floor
+    second: {fileID: 2100000, guid: dbbb4ed10b7f31345aac6d284bf135cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_walls
+    second: {fileID: 2100000, guid: dbbb4ed10b7f31345aac6d284bf135cd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_window_frames
+    second: {fileID: 2100000, guid: 5235ef3a400b9554696c8bd468a8c9fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Dining_hall_window_glass
+    second: {fileID: 2100000, guid: 8dab5c8d93ad6bf49917acbcd6f1ac77, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 302fe77a26544334d9299b3a72b8a880, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door_Frames
+    second: {fileID: 2100000, guid: 5235ef3a400b9554696c8bd468a8c9fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inner_hallway_ceiling
+    second: {fileID: 2100000, guid: 5235ef3a400b9554696c8bd468a8c9fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inner_hallway_floor
+    second: {fileID: 2100000, guid: ee794369ba98c4a418b425583d8c587d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inner_hallway_panel
+    second: {fileID: 2100000, guid: 42618d7a74b87fb40923070a033a8365, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Inner_hallway_walls
+    second: {fileID: 2100000, guid: a4a811ac1f7e98b459d9e233525e9937, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Overpass_railing
+    second: {fileID: 2100000, guid: 5235ef3a400b9554696c8bd468a8c9fc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Service_quarters_floor
+    second: {fileID: 2100000, guid: 07b23f6d3151e7b4d88b804c998eecfd, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Service_quarters_roof
+    second: {fileID: 2100000, guid: 575590c7571c30944a1f37521b8246b8, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Service_quarters_walls
+    second: {fileID: 2100000, guid: a6e0276882925e244a8fc0208fbb5e59, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Service_quarters_walls_top
+    second: {fileID: 2100000, guid: f5b7d49b685ebc24cbfb749da618caa9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: handle
+    second: {fileID: 2100000, guid: 8bd5738ff7419fb48bf9771f48d11175, type: 2}
   materials:
     importMaterials: 1
     materialName: 0

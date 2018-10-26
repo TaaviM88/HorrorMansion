@@ -1,0 +1,141 @@
+fileFormatVersion: 2
+guid: 4c6f760bd4f30b24c8a9c56267c0e864
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: Door
+    100002: //RootNode
+    100004: Double_door
+    100006: Left_door
+    100008: Left_handle
+    100010: Right_door
+    100012: Right_handle
+    100014: Door_1
+    100016: Door_2
+    400000: Door
+    400002: //RootNode
+    400004: Double_door
+    400006: Left_door
+    400008: Left_handle
+    400010: Right_door
+    400012: Right_handle
+    400014: Door_1
+    400016: Door_2
+    2100000: Door
+    2100002: handle
+    4300000: Door
+    4300002: Door_2
+    4300004: Door_1
+    7400000: Double_door|Door_Both_Close
+    7400002: Double_door|Door_idle
+    7400004: Double_door|Door_Left_Close
+    7400006: Double_door|Door_Left_Open
+    7400008: Double_door|Door_Both_Open
+    7400010: Double_door|Door_Right_Close
+    7400012: Double_door|Door_Right_Open
+    7400014: Double_door|Door_1_Idle
+    7400016: Double_door|Door_Both_Closed
+    7400018: Door|Door_1_Idle
+    7400020: Door|Door_Both_Closed
+    7400022: Door|Door_Left_Close
+    7400024: Door|Door_Left_Open
+    7400026: Door|Door_Both_Open
+    7400028: Door|Door_Right_Close
+    7400030: Door|Door_Right_Open
+    9500000: //RootNode
+    13700000: Door
+    13700002: Door_1
+    13700004: Door_2
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Door
+    second: {fileID: 2100000, guid: 302fe77a26544334d9299b3a72b8a880, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: handle
+    second: {fileID: 2100000, guid: 8bd5738ff7419fb48bf9771f48d11175, type: 2}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
