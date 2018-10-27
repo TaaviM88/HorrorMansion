@@ -40,7 +40,7 @@ public class tmp_playermovement : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("jees ");
+        
         if (other.gameObject.tag == "Intractable")
         {
             Debug.Log(" Olen pöydän lähellä");
@@ -54,10 +54,10 @@ public class tmp_playermovement : MonoBehaviour {
         return toggle;
     }
 
-    public GameObject Intractable(GameObject intractableObj)
+    public void Intractable(GameObject intractableObj)
     {
         obj = intractableObj;
-        return null;
+
     }
     public void RemoveIntractable()
     {
