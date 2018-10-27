@@ -22,9 +22,10 @@ GameObject:
   - component: {fileID: 33093294540850194}
   - component: {fileID: 23274002295322532}
   - component: {fileID: 65897411775474254}
+  - component: {fileID: 114088549616241986}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -96,3 +97,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &114088549616241986
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1507289094952176}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f8a3d419d3fb5f4ebaab5d10d71b4c8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 0
+  itemsUISprite: {fileID: 0}
+  name: test_item
+  description: this is dummy you baka

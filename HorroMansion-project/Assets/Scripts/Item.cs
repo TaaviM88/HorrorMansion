@@ -2,11 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Item
+public class Item : MonoBehaviour
 {
+    public ItemTypes.ItemTypes itemType = ItemTypes.ItemTypes.none;
+    public static Item Instance { get; set; }
+
     public int id;
+    public Sprite itemsUISprite;
     public string name;
     public string description;
+
     public Dictionary<string, int> stats = new Dictionary<string, int>();
 
     public Item(int id, string name, string description, Dictionary<string, int> stats)
