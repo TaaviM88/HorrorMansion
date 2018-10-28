@@ -1,20 +1,20 @@
 fileFormatVersion: 2
-guid: 1134010aa7a9da947bfdeb5484574769
+guid: 2b447365f99578249a03e7c76edc32e1
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
     400000: //RootNode
-    2100000: Big_Table
+    2100000: Firewood
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Cube
+    4300000: Firewood
   externalObjects:
   - first:
       type: UnityEngine:Material
       assembly: UnityEngine.CoreModule
-      name: Big_Table
-    second: {fileID: 2100000, guid: a1df3c8e3eb487140896c26ebef6a182, type: 2}
+      name: Firewood
+    second: {fileID: 2100000, guid: 026f008fd8817de449db50dd6ae9b6fc, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
