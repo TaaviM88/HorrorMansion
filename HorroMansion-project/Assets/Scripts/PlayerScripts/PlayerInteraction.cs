@@ -23,7 +23,6 @@ public class PlayerInteraction : MonoBehaviour {
             else
                 Debug.Log("Didn't find a Object Description");
         }
-        Debug.Log(nearInteractableObject);
 	}
 
     private void OnTriggerEnter(Collider other)

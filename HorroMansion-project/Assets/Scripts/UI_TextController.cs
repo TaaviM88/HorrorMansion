@@ -4,9 +4,11 @@ using UnityEngine;
 using UnityEngine.UI;
 public class UI_TextController : MonoBehaviour {
     Image textboxImage;
-    Color Textboxcolor;
+    Color textboxcolor;
     // Use this for initialization
-    void Start () {
+    void Awake ()
+    {
+        textboxcolor = Color.white;
         textboxImage = gameObject.GetComponent<Image>();
         if (textboxImage == null)
         {
@@ -21,15 +23,23 @@ public class UI_TextController : MonoBehaviour {
     {
         if (toggle)
         {
-            Textboxcolor = textboxImage.color;
-            Textboxcolor.a = 0.25f;
-            textboxImage.color = Textboxcolor;
+            textboxcolor = textboxImage.color;
+            textboxcolor.a = 0.125f;
+            textboxImage.color = textboxcolor;
         }
         else
         {
-            Textboxcolor = textboxImage.color;
-            Textboxcolor.a = 0f;
-            textboxImage.color = Textboxcolor;
+            if(textboxcolor == null)
+            {
+                Debug.Log("Mitähän vittua");
+            }
+            else
+            {
+                textboxcolor = textboxImage.color;
+                textboxcolor.a = 0f;
+                textboxImage.color = textboxcolor;
+            }
+            
         }
     }
 }
