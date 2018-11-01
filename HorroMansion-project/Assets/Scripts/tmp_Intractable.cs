@@ -19,8 +19,7 @@ public class tmp_Intractable : MonoBehaviour {
         {
             item = itemGameObject.GetComponent<Item>();
             hasItem = true;
-        }
-            
+        }    
 	}
 	
     private void OnTriggerEnter(Collider other)
@@ -34,8 +33,8 @@ public class tmp_Intractable : MonoBehaviour {
             player.ToggleNearInteractableObject(true);
             player.Intactable(this.gameObject);
             GiveItem();
-        }
-       
+        }   
+        
     }
 
     public void GiveItem()
