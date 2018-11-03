@@ -9,46 +9,45 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1507289094952176}
+  m_RootGameObject: {fileID: 1875765950113532}
   m_IsPrefabAsset: 1
---- !u!1 &1507289094952176
+--- !u!1 &1875765950113532
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 4432174953110862}
-  - component: {fileID: 33093294540850194}
-  - component: {fileID: 23274002295322532}
-  - component: {fileID: 65897411775474254}
-  - component: {fileID: 114088549616241986}
+  - component: {fileID: 4430389247035252}
+  - component: {fileID: 33808639076198904}
+  - component: {fileID: 23656165803187830}
+  - component: {fileID: 114595276331220368}
   m_Layer: 0
-  m_Name: Cube
+  m_Name: tmp_item_key
   m_TagString: Item
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4432174953110862
+--- !u!4 &4430389247035252
 Transform:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1507289094952176}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.771844, y: -1.4955363, z: -77.93235}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_GameObject: {fileID: 1875765950113532}
+  m_LocalRotation: {x: 0.3632874, y: -0.60664845, z: 0.60664845, w: 0.3632874}
+  m_LocalPosition: {x: 0.45650035, y: 0.63600016, z: -0.4026661}
+  m_LocalScale: {x: 5.626618, y: 3.040053, z: 40.000015}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!23 &23274002295322532
+  m_LocalEulerAnglesHint: {x: 90, y: 0, z: 0}
+--- !u!23 &23656165803187830
 MeshRenderer:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1507289094952176}
+  m_GameObject: {fileID: 1875765950113532}
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
@@ -58,7 +57,7 @@ MeshRenderer:
   m_ReflectionProbeUsage: 1
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 486ca27055aca554da2dc5ebc4a45aea, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -78,31 +77,19 @@ MeshRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
---- !u!33 &33093294540850194
+--- !u!33 &33808639076198904
 MeshFilter:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1507289094952176}
-  m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!65 &65897411775474254
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1507289094952176}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114088549616241986
+  m_GameObject: {fileID: 1875765950113532}
+  m_Mesh: {fileID: 4300000, guid: ac9f0052c8d641045a47609b1a22da24, type: 3}
+--- !u!114 &114595276331220368
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1507289094952176}
+  m_GameObject: {fileID: 1875765950113532}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f8a3d419d3fb5f4ebaab5d10d71b4c8, type: 3}
@@ -110,6 +97,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemType: 1
   id: 0
-  itemsUISprite: {fileID: 0}
-  name: test_item
-  description: this is dummy you baka
+  itemsUISprite: {fileID: 21300000, guid: 3ce27dc70bdcd71428f93ef9aeb30a99, type: 3}
+  name: DinnerRoom_key
+  description: This key opens a DinnerRoom doors.

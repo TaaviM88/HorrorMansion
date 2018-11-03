@@ -2,7 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+
 public class UI_TextController : MonoBehaviour {
+
     Image textboxImage;
     Color textboxcolor;
     // Use this for initialization

@@ -14,12 +14,13 @@ public class Item : MonoBehaviour
 
     public Dictionary<string, int> stats = new Dictionary<string, int>();
 
-    public Item(int id, string name, string description, Dictionary<string, int> stats)
+    public Item(int id, string name, string description, Sprite itemSprite, Dictionary<string, int> stats)
     {
         this.id = id;
         this.name = name;
         this.description = description;
         this.stats = stats;
+        this.itemsUISprite = itemSprite;
     }
 
     public Item(Item item)
@@ -28,5 +29,6 @@ public class Item : MonoBehaviour
         this.name = item.name;
         this.description = item.description;
         this.stats = item.stats;
+        this.itemsUISprite = item.itemsUISprite;
     }
 }

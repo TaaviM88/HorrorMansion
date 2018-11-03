@@ -66,5 +66,10 @@ public class tmp_Intractable : MonoBehaviour {
     {
         itemGameObject = null;
         hasItem = false;
+
+        foreach(Item item in GetComponentsInChildren<Item>())
+        {
+            Destroy(item.gameObject);
+        }
     }
 }

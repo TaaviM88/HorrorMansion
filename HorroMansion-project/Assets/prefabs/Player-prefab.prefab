@@ -1090,8 +1090,8 @@ GameObject:
   - component: {fileID: 136512468750142984}
   - component: {fileID: 114023905032552324}
   - component: {fileID: 114156170996164698}
-  - component: {fileID: 114072242845979072}
   - component: {fileID: 114395772354928346}
+  - component: {fileID: 114443872648956622}
   m_Layer: 0
   m_Name: Player-prefab
   m_TagString: Player
@@ -2152,19 +2152,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   logText: {fileID: 0}
   textboxobj: {fileID: 0}
---- !u!114 &114072242845979072
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1984029221093518}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e6b6468095a28b14abff793d2f4e829f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ifAiming: 0
-  target: {fileID: 0}
 --- !u!114 &114156170996164698
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2189,6 +2176,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   moveSpeed: 3
   rotationSpeed: 95
+--- !u!114 &114443872648956622
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1984029221093518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5dfd317ac528ddd44b42225bf5fcdfbd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!136 &136512468750142984
 CapsuleCollider:
   m_ObjectHideFlags: 1
