@@ -30,8 +30,8 @@ public class tmp_Intractable : MonoBehaviour {
             Journal.Instance.Log("Press Action button");
             Journal.Instance.ToggleImageBox(true);
             player = other.gameObject.GetComponent<PlayerInteraction>();
-            player.ToggleNearInteractableObject(true);
-            player.Intactable(this.gameObject);
+            //player.ToggleNearInteractableObject(true);
+            //player.Intactable(this.gameObject);
             GiveItem();
         }   
         
@@ -53,8 +53,9 @@ public class tmp_Intractable : MonoBehaviour {
             Journal.Instance.Log("");
             Journal.Instance.ToggleImageBox(false);
             player = other.gameObject.GetComponent<PlayerInteraction>();
-            player.ToggleNearInteractableObject(false);
-            player.RemoveIntractable();
+//            player.ToggleNearInteractableObject(false);
+
+           //player.RemoveIntractable();
         }
     }
     public void IntractableObjectDescription()
@@ -67,9 +68,9 @@ public class tmp_Intractable : MonoBehaviour {
         itemGameObject = null;
         hasItem = false;
 
-        foreach(Item item in GetComponentsInChildren<Item>())
+        /*foreach(Item item in GetComponentsInChildren<Item>())
         {
             Destroy(item.gameObject);
-        }
+        }*/
     }
 }

@@ -6,17 +6,26 @@ public class UIInventory : MonoBehaviour {
     public List<UIItem> uiItems = new List<UIItem>();
     public GameObject slotPrefab;
     public Transform slotPanel;
-
-	// Use this for initialization
-	void Awake ()
+    public static UIInventory Instance { get; set; }
+    // Use this for initialization
+    void Awake ()
     {
-	    for(int i=0; i < 12; i++)
-        {
-            GameObject instance = Instantiate(slotPrefab);
-            instance.transform.SetParent(slotPanel);
-            uiItems.Add(instance.GetComponentInChildren<UIItem>());
-        }
+
+        
 	}
+
+    public void AddPanel()
+    {
+        if (Inventory.Instance.GetItemsCount() != 0)
+        {
+            for (int i = 0; i < Inventory.Instance.GetItemsCount(); i++)
+            {
+                GameObject instance = Instantiate(slotPrefab);
+                instance.transform.SetParent(slotPanel);
+                uiItems.Add(instance.GetComponentInChildren<UIItem>());
+            }
+        }
+    }
 
     public void UpdateSlot(int slot, Item item)
     {

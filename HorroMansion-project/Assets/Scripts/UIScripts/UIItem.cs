@@ -7,17 +7,24 @@ using System;
 
 public class UIItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, IPointerExitHandler
 {
-
     public Item item;
-    private Image spriteImage;
+    public Image spriteImage;
     private UIItem Selecteditem;
-    private ToolTip toolTip;
+    //private ToolTip toolTip;
 
     // Use this for initialization
-    void Start ()
+    void Awake ()
     {
         Selecteditem = GameObject.Find("Selected Item").GetComponent<UIItem>();
-        toolTip = GameObject.Find("ToolTip").GetComponent<ToolTip>();
+        if(Selecteditem == null)
+        {
+            return;
+        }
+        /*toolTip = GameObject.Find("ToolTip").GetComponent<ToolTip>();
+        if(toolTip == null)
+        {
+            return;
+        }*/
         spriteImage = GetComponent<Image>();
         UpdateItem(null);
 	}
@@ -29,6 +36,7 @@ public class UIItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, 
         {
             spriteImage.color = Color.white;
             spriteImage.sprite = item.itemsUISprite;
+            Debug.Log("Päivitettiin UI-esineen kuva");
         }
         else
         {
@@ -63,12 +71,12 @@ public class UIItem : MonoBehaviour, IPointerDownHandler, IPointerEnterHandler, 
     {
         if (this.item != null)
         {           
-            toolTip.GenerateToolTip(this.item);
+            //toolTip.GenerateToolTip(this.item);
         }
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
-        toolTip.gameObject.SetActive(false);
+        //toolTip.gameObject.SetActive(false);
     }
 }

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f0beb278236294298abd456525ca6a, type: 3}
+  m_Name: lighter_equipment
+  m_EditorClassIdentifier: 
+  name: lighter_equipment
+  icon: {fileID: 21300000, guid: 704a68966c81a4c469af8f892e5c1d1b, type: 3}
+  isDefaultItem: 0
+  equipSlot: 0
+  coveredMeshRegions: 
+  mesh: {fileID: 137294410094351350, guid: 4143250758c748b478c6e978e65ac108, type: 2}
+  armorModifier: 0
+  damageModifier: 0

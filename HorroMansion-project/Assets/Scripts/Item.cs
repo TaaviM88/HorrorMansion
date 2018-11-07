@@ -31,4 +31,5 @@ public class Item : MonoBehaviour
         this.stats = item.stats;
         this.itemsUISprite = item.itemsUISprite;
     }
+
 }

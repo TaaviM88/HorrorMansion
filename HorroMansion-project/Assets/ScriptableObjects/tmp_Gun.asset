@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a0f0beb278236294298abd456525ca6a, type: 3}
+  m_Name: tmp_Gun
+  m_EditorClassIdentifier: 
+  name: Pistol
+  icon: {fileID: 21300000, guid: 8ab78c60d80dea942abfd7f1914338a2, type: 3}
+  isDefaultItem: 0
+  equipSlot: 0
+  coveredMeshRegions: 
+  mesh: {fileID: 137202196552224780, guid: 7ad0cef7dcfb7ed4a962bed45b8e84cd, type: 2}
+  armorModifier: 0
+  damageModifier: 1

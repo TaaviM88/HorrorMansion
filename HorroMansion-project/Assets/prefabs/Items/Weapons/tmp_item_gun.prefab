@@ -21,7 +21,8 @@ GameObject:
   - component: {fileID: 4854741980124390}
   - component: {fileID: 33971789595128474}
   - component: {fileID: 23862028460212366}
-  - component: {fileID: 114193473334904630}
+  - component: {fileID: 114526352109482240}
+  - component: {fileID: 135809181993529780}
   m_Layer: 0
   m_Name: tmp_item_gun
   m_TagString: Item
@@ -36,8 +37,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345717553646360}
   m_LocalRotation: {x: -0.26868626, y: -0.65407014, z: -0.65407014, w: 0.26868626}
-  m_LocalPosition: {x: 0.21400012, y: 0.6160002, z: 0.27699992}
-  m_LocalScale: {x: 15.12719, y: 15.295648, z: 16}
+  m_LocalPosition: {x: 4.522793, y: 0.976, z: 5.6365623}
+  m_LocalScale: {x: 15.12719, y: 15.295648, z: 4}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -84,7 +85,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1345717553646360}
   m_Mesh: {fileID: 4300000, guid: aca742fb116ddc84cb4bafeb7aacedc2, type: 3}
---- !u!114 &114193473334904630
+--- !u!114 &114526352109482240
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
@@ -92,11 +93,21 @@ MonoBehaviour:
   m_GameObject: {fileID: 1345717553646360}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 2f8a3d419d3fb5f4ebaab5d10d71b4c8, type: 3}
+  m_Script: {fileID: 11500000, guid: 8a060c7101fe5e94cbafd6c77b900e33, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemType: 2
-  id: 0
-  itemsUISprite: {fileID: 21300000, guid: 8ab78c60d80dea942abfd7f1914338a2, type: 3}
-  name: Gun
-  description: It's a gun. Not ready yet.
+  radius: 2
+  interactionTransform: {fileID: 4854741980124390}
+  item: {fileID: 11400000, guid: 044d8b46630b3db489a2166553f2a5db, type: 2}
+--- !u!135 &135809181993529780
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1345717553646360}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.07
+  m_Center: {x: 0.00000037300936, y: -0.0001348085, z: 0.00007024838}
