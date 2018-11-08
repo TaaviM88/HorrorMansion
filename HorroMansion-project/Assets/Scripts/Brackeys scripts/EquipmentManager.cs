@@ -50,6 +50,8 @@ public class EquipmentManager : MonoBehaviour {
         newMesh.transform.parent = targetMesh.transform;
         newMesh.bones = targetMesh.bones;
         newMesh.rootBone = targetMesh.rootBone;
+        //newMesh.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
+        newMesh.transform.Rotate (new Vector3(90, 90, 90),Space.World);
         currentMeshes[slotIndex] = newMesh;
     }
 
