@@ -7,6 +7,7 @@ public class PlayerMovement : MonoBehaviour {
     public float moveSpeed;
     public float rotationSpeed; 
     private Rigidbody rb;
+    Transform target;
     bool enableMovement = true;
     Animator anime;
     // Use this for initialization
@@ -14,6 +15,7 @@ public class PlayerMovement : MonoBehaviour {
     {
         rb = GetComponent<Rigidbody>();
         anime = GetComponent<Animator>();
+        
 	}
 	
 	// Update is called once per frame
@@ -51,4 +53,6 @@ public class PlayerMovement : MonoBehaviour {
     {
         enableMovement = move;
     }
+
+   
 }

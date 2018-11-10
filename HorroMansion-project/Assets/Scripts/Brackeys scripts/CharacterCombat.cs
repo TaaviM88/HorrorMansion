@@ -18,7 +18,7 @@ public class CharacterCombat : MonoBehaviour {
     const float combatCooldown = 5f;
     float lastAttackTime;
     public bool InCombat { get; private set; }
-    public event System.Action OnAttack;
+    public event Action OnAttack;
 
 
    

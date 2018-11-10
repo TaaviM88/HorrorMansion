@@ -6,6 +6,7 @@ public class tmp_playermovement : MonoBehaviour {
     public float speed = 50f;
     private Rigidbody _rb;
     bool nearInteractableObject = false;
+   
     GameObject obj;
 
     // Use this for initialization
@@ -15,17 +16,10 @@ public class tmp_playermovement : MonoBehaviour {
 
     private void Update()
     {
-        if(Input.GetButtonDown("Fire1") && nearInteractableObject)
+        if(Input.GetButtonDown("Fire1"))
         {
-            if (obj != null)
-            {
-                var a = obj.gameObject.GetComponent<tmp_Intractable>();
-                a.IntractableObjectDescription();
-            }
-            else
-                Debug.Log(" FUCK");
+            Journal.Instance.Log(" ");
         }
-        Debug.Log(nearInteractableObject);
     }
 
     // Update is called once per frame
@@ -35,7 +29,7 @@ public class tmp_playermovement : MonoBehaviour {
         float moveVertical = Input.GetAxis("Vertical");
 
         Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-        _rb.AddForce(movement * speed);
+        _rb.AddForce(movement * speed * Time.fixedDeltaTime);
 	}
 
     private void OnTriggerEnter(Collider other)
@@ -43,7 +37,7 @@ public class tmp_playermovement : MonoBehaviour {
         
         if (other.gameObject.tag == "Intractable")
         {
-            Debug.Log(" Olen pöydän lähellä");
+            //Debug.Log(" Olen pöydän lähellä");
             obj = other.gameObject; //other.gameObject.GetComponent<tmp_Intractable>();  
         }
     }
