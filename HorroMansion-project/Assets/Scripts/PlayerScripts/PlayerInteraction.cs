@@ -25,18 +25,19 @@ public class PlayerInteraction : MonoBehaviour {
                 if (interactable != null)
                 {
                     SetFocus(interactable);
-
+                    interactable.Interact();
                     Debug.DrawLine(ray.origin, hit.point);
                     target = interactable.transform;
-                    FaceTarget();
+                    //FaceTarget();
 
                     CharacterStats targetstat = interactable.GetComponent<CharacterStats>();
                     if (targetstat != null)
                     {
+                        interactable.Interact();
                         combat.Attack(targetstat);
                         Debug.DrawLine(ray.origin, hit.point);
                         //target = enemy.transform;
-                        FaceTarget();
+                        //FaceTarget();
                     }
                 }
             }
