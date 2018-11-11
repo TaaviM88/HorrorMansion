@@ -7,12 +7,15 @@ public class DoorScript : Interactable {
     Animator anime;
     public bool isLocked = false;
     bool doorIsOpen = false;
-    public string DoorDescription = "hey, this is a door";
-    public string hintIfDoorIsLocked = "Hey, this is door is locked";
+    public bool isDoubleDoor = true;
     public float closingTime = 4f;
     float countdown;
+    public string DoorDescription = "hey, this is a door";
+    public string hintIfDoorIsLocked = "Hey, this is door is locked";
     public GameObject door1;
     public GameObject door2;
+    
+    
 	// Use this for initialization
 	void Start () {
         anime = GetComponent<Animator>();
@@ -67,10 +70,13 @@ public class DoorScript : Interactable {
                     col1.isTrigger = true;
                 }
 
-                Collider col2 = door2.GetComponent<Collider>();
-                if (col2 != null)
+                if (isDoubleDoor == true)
                 {
-                    col2.isTrigger = true;
+                    Collider col2 = door2.GetComponent<Collider>();
+                    if (col2 != null)
+                    {
+                        col2.isTrigger = true;
+                    }
                 }
                 countdown = closingTime;
             }
@@ -82,12 +88,14 @@ public class DoorScript : Interactable {
                 {
                     col1.isTrigger = false;
                 }
-                Collider col2 = door2.GetComponent<Collider>();
-                if(col2 != null)
+                if (isDoubleDoor == true)
                 {
-                    col2.isTrigger = false;
-                }
-              
+                    Collider col2 = door2.GetComponent<Collider>();
+                    if (col2 != null)
+                    {
+                        col2.isTrigger = false;
+                    }
+                }  
             }
         }
         else

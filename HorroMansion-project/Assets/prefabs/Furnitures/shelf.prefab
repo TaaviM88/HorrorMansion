@@ -26,6 +26,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1293397795340396
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4261446416543154}
+  m_Layer: 0
+  m_Name: Interacion Point
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1356711645567254
 GameObject:
   m_ObjectHideFlags: 0
@@ -51,6 +66,7 @@ GameObject:
   - component: {fileID: 4827108054147514}
   - component: {fileID: 95211100526451826}
   - component: {fileID: 65710324047333842}
+  - component: {fileID: 114835406694255324}
   m_Layer: 0
   m_Name: shelf
   m_TagString: Untagged
@@ -181,6 +197,19 @@ Transform:
   m_Father: {fileID: 4827108054147514}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4261446416543154
+Transform:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1293397795340396}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.494, y: 0.88, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4827108054147514}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4605956587715956
 Transform:
   m_ObjectHideFlags: 1
@@ -291,6 +320,7 @@ Transform:
   - {fileID: 4728463155134332}
   - {fileID: 4675541164391068}
   - {fileID: 4605956587715956}
+  - {fileID: 4261446416543154}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: -91.23701, z: 0}
@@ -337,6 +367,24 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &114835406694255324
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1516259593886128}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc2a7aec57787e84abac9c19257374ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 0.5
+  UseGizmoSphere: 1
+  sizeX: 1
+  sizeY: 1
+  sizeZ: 1
+  interactionTransform: {fileID: 4261446416543154}
+  description: There is nothing special here.
 --- !u!137 &137167859269510930
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 1

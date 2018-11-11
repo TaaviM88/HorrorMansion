@@ -185,7 +185,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1100492153130642}
   m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 4.657178, y: 0.71524477, z: 5.965071}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4080030185981930}
@@ -257,8 +257,8 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1.0717399, y: 0.27403566, z: 0.37247252}
-  m_Center: {x: -0.43090189, y: 0.038586363, z: -0.0031000376}
+  m_Size: {x: 1.4324167, y: 0.27403566, z: 0.37247252}
+  m_Center: {x: -0.25056344, y: 0.038586363, z: -0.0031000376}
 --- !u!95 &95099032321100910
 Animator:
   serializedVersion: 3
@@ -289,6 +289,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radius: 1.4
+  UseGizmoSphere: 1
+  sizeX: 1
+  sizeY: 1
+  sizeZ: 1
   interactionTransform: {fileID: 4364195510104052}
   item: {fileID: 11400000, guid: a09b48874ebf90a459cb12ad4236e8be, type: 2}
 --- !u!137 &137160914033614118
