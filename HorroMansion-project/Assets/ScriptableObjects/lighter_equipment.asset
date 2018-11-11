@@ -14,6 +14,7 @@ MonoBehaviour:
   name: lighter_equipment
   icon: {fileID: 21300000, guid: 704a68966c81a4c469af8f892e5c1d1b, type: 3}
   isDefaultItem: 0
+  obj: {fileID: 1100492153130642, guid: 804065be747ee7f46a5f33dd9f61929a, type: 2}
   equipSlot: 0
   coveredMeshRegions: 
   mesh: {fileID: 137294410094351350, guid: 4143250758c748b478c6e978e65ac108, type: 2}

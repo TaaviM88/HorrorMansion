@@ -46,13 +46,45 @@ public class EquipmentManager : MonoBehaviour {
         SetEquipmentBlendShapes(newItem, 100);
         //Insert the item into the slot
         curretEquipment[slotIndex] = newItem;
+
+        //Uusi toteutus
+        GameObject newObject = Instantiate<GameObject>(newItem.obj);
+        newObject.transform.parent = targetMesh.transform;
+
+
+        /*SkinnedMeshRenderer newMesh = newObject.gameObject.GetComponentInChildren<SkinnedMeshRenderer>();
+        newMesh.bones = targetMesh.bones;
+        newMesh.rootBone = targetMesh.rootBone;*/
+        
+        SkinnedMeshRenderer[] newMeshs = newObject.gameObject.GetComponentsInChildren<SkinnedMeshRenderer>();
+
+        foreach (SkinnedMeshRenderer mesh in newMeshs)
+        {
+            Debug.Log(mesh.name);
+            if(mesh.tag == "MainMesh")
+            {
+                mesh.transform.parent = targetMesh.transform;
+                mesh.bones = targetMesh.bones;
+                mesh.rootBone = targetMesh.rootBone;
+                mesh.transform.position = new Vector3(0, 0, 0);
+                currentMeshes[slotIndex] = mesh;
+            }
+            
+        }
+
+        //orggis toteutus
+        /*
         SkinnedMeshRenderer newMesh = Instantiate<SkinnedMeshRenderer>(newItem.mesh);
+
         newMesh.transform.parent = targetMesh.transform;
         newMesh.bones = targetMesh.bones;
         newMesh.rootBone = targetMesh.rootBone;
+
+        
+
         //newMesh.transform.localScale = new Vector3(0.1f, 0.1f, 0.1f);
-        newMesh.transform.Rotate (new Vector3(90, 90, 90),Space.World);
-        currentMeshes[slotIndex] = newMesh;
+        //newMesh.transform.Rotate (new Vector3(90, 90, 90),Space.World);
+        currentMeshes[slotIndex] = newMesh;*/
     }
 
     public Equipment UnEquip(int slotIndex)

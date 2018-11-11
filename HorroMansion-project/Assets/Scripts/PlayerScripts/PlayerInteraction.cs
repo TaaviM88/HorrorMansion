@@ -18,7 +18,7 @@ public class PlayerInteraction : MonoBehaviour {
         {
             Ray ray = new Ray(transform.position + (new Vector3(0, 1, 0)), transform.forward);
             RaycastHit hit;
-            if (Physics.Raycast(ray, out hit, 100))
+            if (Physics.Raycast(ray, out hit, 1.5f))
             {
 
                 Interactable interactable = hit.collider.GetComponent<Interactable>();
@@ -71,51 +71,4 @@ public class PlayerInteraction : MonoBehaviour {
         Quaternion lookRotation = Quaternion.LookRotation(new Vector3(direction.x, 0, direction.z));
         transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, Time.deltaTime * 5f);
     }
-
-    /*
-    bool nearInteractableObject = false;
-    GameObject obj;
-
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-        if(Input.GetButtonDown("Fire1") && nearInteractableObject)
-        {
-            if (obj != null)
-            {
-                var a = obj.gameObject.GetComponent<tmp_Intractable>();
-                a.IntractableObjectDescription();
-            }
-            else
-                Debug.Log("Didn't find a Object Description");
-        }
-	}
-
-    private void OnTriggerEnter(Collider other)
-    {
-        if(other.gameObject.tag == "Intractable")
-        {
-            obj = other.gameObject;
-        }
-    }
-
-    public void ToggleNearInteractableObject(bool toggle)
-    {
-        nearInteractableObject = toggle;
-    }
-
-    public void Intactable(GameObject intractableObj)
-    {
-        obj = intractableObj;
-    }
-    public void RemoveIntractable()
-    {
-        obj = null;
-    }
-    */
 }

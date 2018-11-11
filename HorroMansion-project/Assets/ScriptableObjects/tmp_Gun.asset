@@ -14,6 +14,7 @@ MonoBehaviour:
   name: Pistol
   icon: {fileID: 21300000, guid: 8ab78c60d80dea942abfd7f1914338a2, type: 3}
   isDefaultItem: 0
+  obj: {fileID: 1100492153130642, guid: 804065be747ee7f46a5f33dd9f61929a, type: 2}
   equipSlot: 0
   coveredMeshRegions: 
   mesh: {fileID: 137202196552224780, guid: 7ad0cef7dcfb7ed4a962bed45b8e84cd, type: 2}

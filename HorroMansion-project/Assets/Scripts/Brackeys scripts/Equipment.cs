@@ -5,6 +5,7 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Equipment", menuName = "Inventory/Equipment")]
 public class Equipment : ItemB {
 
+    public GameObject obj;
     public EquipmentSlot equipSlot;
     public EquipmentMeshRegion[] coveredMeshRegions;
     public SkinnedMeshRenderer mesh;
