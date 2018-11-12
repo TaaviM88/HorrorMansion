@@ -57,8 +57,7 @@ public class Interactable : MonoBehaviour {
         {
             Gizmos.DrawCube(interactionTransform.position, new Vector3(sizeX, sizeY, sizeZ));
         }
-       
-       
+
     }
 
 }

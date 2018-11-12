@@ -14,7 +14,7 @@ public class DoorScript : Interactable {
     public string hintIfDoorIsLocked = "Hey, this is door is locked";
     public GameObject door1;
     public GameObject door2;
-    
+    public GameObject requiredKeyObject;
     
 	// Use this for initialization
 	void Start () {
@@ -29,7 +29,7 @@ public class DoorScript : Interactable {
     public override void Interact()
     {
         base.Interact();
-        if(!doorIsOpen)
+        if(!doorIsOpen && !isLocked)
         {
             InteractiveDoor(true);
         }
