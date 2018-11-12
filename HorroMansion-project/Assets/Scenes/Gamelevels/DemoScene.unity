@@ -2587,7 +2587,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339921968358252, guid: 2e8f69bef3d18dd4a90e7b7b84fce24e, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -0.0015599987
+      value: -0.00449
       objectReference: {fileID: 0}
     - target: {fileID: 4339921968358252, guid: 2e8f69bef3d18dd4a90e7b7b84fce24e, type: 2}
       propertyPath: m_LocalPosition.y
@@ -2595,7 +2595,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4339921968358252, guid: 2e8f69bef3d18dd4a90e7b7b84fce24e, type: 2}
       propertyPath: m_LocalPosition.z
-      value: -0.0000000013411041
+      value: -0.00016
       objectReference: {fileID: 0}
     - target: {fileID: 23331157355962232, guid: 2e8f69bef3d18dd4a90e7b7b84fce24e,
         type: 2}
@@ -3304,7 +3304,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 464127351}
   m_LocalRotation: {x: 0.000030621886, y: 0.00017207861, z: -0.9843545, w: 0.17619966}
-  m_LocalPosition: {x: -0.0074, y: -0.0004, z: -0.0003}
+  m_LocalPosition: {x: -0.00411, y: -0.00323, z: 0.00091}
   m_LocalScale: {x: 0.76265264, y: 0.76265377, z: 0.7626534}
   m_Children: []
   m_Father: {fileID: 232360735}
@@ -3396,8 +3396,8 @@ Transform:
     type: 2}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 498566846}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 16.18, y: 0.38, z: -10.132}
+  m_LocalRotation: {x: 0.2368062, y: -0.36966804, z: 0.09801571, w: 0.8931189}
+  m_LocalPosition: {x: 23.832764, y: 3.4925022, z: -10.119573}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 525524376}
@@ -3464,8 +3464,8 @@ Camera:
     width: 1
     height: 1
   near clip plane: 0.1
-  far clip plane: 5000
-  field of view: 40
+  far clip plane: 1000
+  field of view: 60
   orthographic: 0
   orthographic size: 10
   m_Depth: -1
@@ -9718,9 +9718,9 @@ Light:
   m_Enabled: 1
   serializedVersion: 8
   m_Type: 2
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 1, g: 0.9260533, b: 0.7311321, a: 1}
   m_Intensity: 1
-  m_Range: 20
+  m_Range: 10
   m_SpotAngle: 30
   m_CookieSize: 10
   m_Shadows:
