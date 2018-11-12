@@ -28,6 +28,7 @@ public class PlayerInteraction : MonoBehaviour {
                     interactable.Interact();
                     Debug.DrawLine(ray.origin, hit.point);
                     target = interactable.transform;
+                    
                     //FaceTarget();
 
                     CharacterStats targetstat = interactable.GetComponent<CharacterStats>();
@@ -56,6 +57,7 @@ public class PlayerInteraction : MonoBehaviour {
         
         newFocus.Onfocused(transform);
     }
+
 
     //Keksi miten päästää tästä tilanteessa pois
     void RemoveFocus()

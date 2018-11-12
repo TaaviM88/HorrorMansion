@@ -14,7 +14,7 @@ public class DoorScript : Interactable {
     public string hintIfDoorIsLocked = "Hey, this is door is locked";
     public GameObject door1;
     public GameObject door2;
-    public GameObject requiredKeyObject;
+    public Equipment requiredKeyObject;
     
 	// Use this for initialization
 	void Start () {
@@ -32,14 +32,28 @@ public class DoorScript : Interactable {
         if(!doorIsOpen && !isLocked)
         {
             InteractiveDoor(true);
+
+        }
+        else if(isLocked)
+        {
+            Equipment a = EquipmentManager.instance.ReturnCurrentEquipment();
+            if (requiredKeyObject.name == a.name)
+            {
+                isLocked = false;
+                Journal.Instance.Log("Door is now open");
+            }
+            else
+            
+            //Debug.Log(a.name + " " + requiredKeyObject.name);
+            InformJournalDoorIsLocked();
         }
     }
 
     // Update is called once per frame
     void Update ()
     {
-
-        if(doorIsOpen)
+       
+        if (doorIsOpen)
         {
             countdown -= Time.deltaTime;
             if (countdown <= 0)
@@ -55,7 +69,10 @@ public class DoorScript : Interactable {
     //Avataan tai suljetaan ovi
     public void InteractiveDoor(bool open)
     {
-        if(!isLocked)
+
+        
+
+        if (!isLocked)
         {
             //katotaan avaanko ovi vai suljetaanko se
             doorIsOpen = open;
@@ -103,7 +120,6 @@ public class DoorScript : Interactable {
             //Mikäli ovi on lukossa niin kutsutaan tätä
             InformJournalDoorIsLocked();
         }
-        
     }
 
     //varmuudeksi jos ei jostain syystä pysty pääsemään käsiksi suoraan iteractvibedoo methodiin.
