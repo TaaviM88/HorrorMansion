@@ -42,7 +42,7 @@ MonoBehaviour:
   ambientOcclusion:
     m_Enabled: 1
     m_Settings:
-      intensity: 1
+      intensity: 1.17
       radius: 0.3
       sampleCount: 10
       downsampling: 1
@@ -100,11 +100,11 @@ MonoBehaviour:
     m_Enabled: 1
     m_Settings:
       bloom:
-        intensity: 0.33
-        threshold: 1.1
-        softKnee: 0.5
-        radius: 1.27
-        antiFlicker: 0
+        intensity: 1.5
+        threshold: 3
+        softKnee: 0.026
+        radius: 2.63
+        antiFlicker: 1
       lensDirt:
         texture: {fileID: 0}
         intensity: 3
