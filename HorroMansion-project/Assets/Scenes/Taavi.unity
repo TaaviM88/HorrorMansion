@@ -1634,6 +1634,34 @@ Prefab:
     - {fileID: 114138706156814564, guid: c405335664efd7444aca5de5dcb6212e, type: 2}
   m_SourcePrefab: {fileID: 100100000, guid: c405335664efd7444aca5de5dcb6212e, type: 2}
   m_IsPrefabAsset: 0
+--- !u!1 &359175540
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 359175541}
+  m_Layer: 0
+  m_Name: SpawnPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &359175541
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 359175540}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.108, y: 0.045, z: -0.326}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 2003128116}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &359633405
 GameObject:
   m_ObjectHideFlags: 0
@@ -8274,6 +8302,34 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.4560013, y: 6.5, z: 2.0200012}
   m_Center: {x: 0.001756072, y: 3.25, z: -0.7376208}
+--- !u!114 &2003128113
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 2003128110}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e1f0fdc77136a5245863f09a5fa24690, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  radius: 3
+  UseGizmoSphere: 1
+  sizeX: 1
+  sizeY: 1
+  sizeZ: 1
+  interactionTransform: {fileID: 2003128116}
+  requiredItem: {fileID: 11400000, guid: 847ec7a13a938d44e9a4443d3c698624, type: 2}
+  spawnObject: {fileID: 1492469618751256, guid: 5f64e853f8721b14b8833568238de25d,
+    type: 2}
+  spawnpoint: {fileID: 359175541}
+  puzzleHint: ' Here cool hint for player.'
+  puzzleSolved: Hey, you have already solve this.
+--- !u!4 &2003128116 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400000, guid: f4c4f9750bcbdba40a993d2ea389cc47,
+    type: 3}
+  m_PrefabInternal: {fileID: 1346812315}
 --- !u!1 &2013027415
 GameObject:
   m_ObjectHideFlags: 0
